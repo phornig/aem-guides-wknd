@@ -134,10 +134,6 @@ Include conf.d/variables/custom.vars
 	</IfModule>
 	<IfModule mod_rewrite.c>
 		RewriteEngine	on
-
-		# ESS 404 Redirects
-		RewriteRule ^(/us/en/company.html)$ /us/en/about-us.html [R=301,L]
-
 		Include conf.d/rewrites/rewrite.rules
 	</IfModule>
     ErrorDocument 404 ${404_PAGE}
