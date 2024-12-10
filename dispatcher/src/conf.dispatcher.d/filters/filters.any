@@ -22,7 +22,7 @@ $include "./default_filters.any"
 /0112 { /type "allow" /method "POST" /url "/system/sling/logout" }
 
 # Allow robots.txt
-/0113 { /type "allow" /method "GET" /url "/robots.txt" }
+/0113 { /type "allow" /method "GET" /url "/content/dam/*/robots.txt" }
 
 # Allow GraphQL global endpoint & preflight requests
 # GraphQL also supports GET requests, if you intend to use GET include it in the rule below
