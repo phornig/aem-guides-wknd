@@ -1,0 +1,5 @@
+{
+  "scheduler.name": "WKND Sitemaps",
+  "scheduler.expression": "*/5 * * * *",
+  "searchPath": "/content/wknd"
+}

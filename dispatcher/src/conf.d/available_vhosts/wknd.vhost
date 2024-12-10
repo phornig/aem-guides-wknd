@@ -138,6 +138,9 @@ Include conf.d/variables/custom.vars
 		# Robots.txt
 		RewriteRule ^/robots\.txt$ /content/dam/wknd/robots.txt [NC,PT]
 
+		# Sitemap.xml
+		RewriteRule ^/sitemap\.xml$ /content/wknd.sitemap.xml [NC,PT]
+
 		Include conf.d/rewrites/rewrite.rules
 	</IfModule>
     ErrorDocument 404 ${404_PAGE}

@@ -1,5 +1,6 @@
 {
   "resource.resolver.mapping": [
     "/content/wknd/</", "/:/"
-  ]
+  ],
+  "resource.resolver.map.location": "/conf/wknd/settings/map.prod.publish"
 }
