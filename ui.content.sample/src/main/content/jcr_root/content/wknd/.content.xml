@@ -13,7 +13,8 @@
         sling:configRef="/conf/wknd"
         sling:resourceType="wknd/components/page"
         cq:redirectTarget="/content/wknd/us/en"
-        cq:template="/conf/wknd/settings/wcm/templates/landing-page-template">
+        cq:template="/conf/wknd/settings/wcm/templates/landing-page-template"
+        sling:sitemapRoot="{Boolean}true">
         <image jcr:primaryType="nt:unstructured">
             <file/>
         </image>
