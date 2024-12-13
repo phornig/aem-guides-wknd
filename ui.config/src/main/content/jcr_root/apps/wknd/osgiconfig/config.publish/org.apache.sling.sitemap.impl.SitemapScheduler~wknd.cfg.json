@@ -1,0 +1,5 @@
+{
+  "scheduler.name": "wknd",
+  "scheduler.expression": "0 0 * ? * * *",
+  "searchPath": "/content"
+}
