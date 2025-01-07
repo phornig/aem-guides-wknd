@@ -1,0 +1,3 @@
+maps:
+    - name: ess-wknd.map
+      path: /api/ess/redirects/dispatcher/txt?site=/content/wknd

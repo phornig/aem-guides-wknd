@@ -141,6 +141,11 @@ Include conf.d/variables/custom.vars
 		# Sitemap.xml
 		RewriteRule ^/sitemap\.xml$ /content/wknd.sitemap.xml [NC,PT]
 
+		# RewriteMap from managed rewrite maps
+		RewriteMap map.foo dbm=sdbm:/tmp/rewrites/ess-wknd.map
+		RewriteCond ${map.foo:$1} !=""
+		RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
+
 		Include conf.d/rewrites/rewrite.rules
 	</IfModule>
     ErrorDocument 404 ${404_PAGE}
